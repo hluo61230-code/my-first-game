@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸运点击挑战</title>
+
+    <style>
+        body {
+            background-color: #eaf2ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px 15px;
+        }
+
+        .game {
+            background: white;
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        h1 {
+            color: #2864c5;
+        }
+
+        .score {
+            font-size: 30px;
+            margin: 25px;
+        }
+
+        button {
+            background: #3478f6;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 12px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="game">
+
+        <h1>🎮 幸运点击挑战</h1>
+
+        <p>欢迎来到我的第一个小游戏！</p>
+
+        <div class="score">
+            分数：<span id="score">0</span>
+        </div>
+
+        <button onclick="addScore()">
+            点击增加分数
+        </button>
+
+    </div>
+
+    <script>
+        let score = 0;
+
+        function addScore() {
+            score++;
+
+            document.getElementById("score").textContent = score;
+        }
+    </script>
+
+</body>
+</html>
